@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_globe" translatesAutoresizingMaskIntoConstraints="NO" id="gUu-mO-sSC">
+                                <rect key="frame" x="52" y="102" width="310" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gUu-mO-sSC" secondAttribute="height" multiplier="1:1" id="7tC-or-HHK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh2-am-R6j">
+                                <rect key="frame" x="101" y="566.33333333333337" width="212" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" red="0.11372549019607843" green="0.72549019607843135" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gUu-mO-sSC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.7" id="2gc-ua-Om5"/>
+                            <constraint firstItem="gUu-mO-sSC" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.65" id="OID-KL-y87"/>
+                            <constraint firstItem="gUu-mO-sSC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.75" id="QNE-hk-L30"/>
+                            <constraint firstItem="gUu-mO-sSC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UGJ-EN-2pZ"/>
+                            <constraint firstItem="Bh2-am-R6j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.6" id="afL-hV-CG7"/>
+                            <constraint firstItem="Bh2-am-R6j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="awo-g7-6gJ"/>
+                            <constraint firstItem="gUu-mO-sSC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="gcS-bG-PXz"/>
+                            <constraint firstItem="gUu-mO-sSC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.75" id="laN-wN-hUH"/>
+                            <constraint firstItem="Bh2-am-R6j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.7" id="su9-3i-Ada"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OID-KL-y87"/>
+                                <exclude reference="QNE-hk-L30"/>
+                                <exclude reference="gcS-bG-PXz"/>
+                                <exclude reference="su9-3i-Ada"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="2gc-ua-Om5"/>
+                                <include reference="OID-KL-y87"/>
+                                <include reference="QNE-hk-L30"/>
+                                <exclude reference="gcS-bG-PXz"/>
+                                <exclude reference="laN-wN-hUH"/>
+                                <exclude reference="afL-hV-CG7"/>
+                                <include reference="su9-3i-Ada"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="gcS-bG-PXz"/>
+                                <exclude reference="laN-wN-hUH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="green_globe" width="240" height="240"/>
+    </resources>
+</document>
